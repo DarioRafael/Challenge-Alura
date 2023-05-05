@@ -16,12 +16,22 @@ body {
     padding: 5px;
     margin: auto 2em;
     
+    
     text-align: center;
-    color: white;
-    background: gray;
+    font-weight: bolder;
+    color: #0A3871;
+    
+
+    background: #E5E5E5;
     border-radius: 24px;
 
+    transition: 2s;
     cursor: pointer;
+    
+}
+
+#botonModoOscuro::after{
+    content: "🌙";  
 }
 
 .principal {
@@ -199,14 +209,29 @@ body {
 
 /* Modo Oscuro */
 
+.modoOscuro {
+    transition: 2s;
+}
+
+.modoOscuro #botonModoOscuro {
+    color: whitesmoke;
+    background: #191919;
+    
+}
+
+.modoOscuro #botonModoOscuro::after{
+    content: "💡";
+}
+
 body.modoOscuro{
     background: #191919;
-    transition: 2s;
+    
 }
 
 
 .modoOscuro .campo-texto{
     color: whitesmoke;
+    transition: 2s;
 }
 
 .modoOscuro .campo-texto::placeholder {
@@ -216,12 +241,13 @@ body.modoOscuro{
 
 .modoOscuro .muñeco {
     background: black;
-    transition: 2s;
+    
 }
 
 .modoOscuro .muñeco h2{
     color: whitesmoke;
     transition: 2s;
+    
 }
 
 .modoOscuro .muñeco p{
@@ -231,7 +257,7 @@ body.modoOscuro{
 
 .modoOscuro #textoContenedor{
     color: white;
-    transition: 2s;
+    
 }
 
 
