@@ -211,6 +211,7 @@ body.modoOscuro{
 
 .modoOscuro .campo-texto::placeholder {
     color: whitesmoke;
+    transition: 2s;
 }
 
 .modoOscuro .muñeco {
@@ -220,14 +221,17 @@ body.modoOscuro{
 
 .modoOscuro .muñeco h2{
     color: whitesmoke;
+    transition: 2s;
 }
 
 .modoOscuro .muñeco p{
     color: whitesmoke;
+    transition: 2s;
 }
 
 .modoOscuro #textoContenedor{
     color: white;
+    transition: 2s;
 }
 
 
