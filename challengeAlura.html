@@ -19,6 +19,7 @@
 
     <div class="logo">
         <img src="imagenes/logo.png" alt="logo alura">
+        <button id = "botonModoOscuro"> Modo oscuro 💡</button>
     </div>
 
     <div class="principal">
@@ -44,17 +45,26 @@
 
 
     <script>
-
-
-
         let botonEncriptar = document.getElementById("botonEncriptar");
         let botonDesencriptador = document.getElementById("botonDesencriptador");
         const botonCopiar = document.getElementById("botonCopiar");
         let campoTexto = document.getElementById("campoTexto");
         let textoContenedor = document.getElementById("textoContenedor");
+        let botonModoOscuro = document.getElementById("botonModoOscuro");
         let palabraEscrita;
 
 
+        botonModoOscuro.addEventListener("click", function() {
+
+
+            document.body.classList.toggle("modoOscuro");
+            
+            
+
+
+
+
+        });
 
 
         botonEncriptar.addEventListener("click", function () {

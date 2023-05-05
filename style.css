@@ -1,12 +1,27 @@
 body {
     background: #E5E5E5;
     font-family: "Inter", sans-serif;
-
+    transition: 2s;
 }
+
+
 
 .logo {
     position: absolute;
     margin: 2em;
+}
+
+#botonModoOscuro{
+    position: absolute;
+    padding: 5px;
+    margin: auto 2em;
+    
+    text-align: center;
+    color: white;
+    background: gray;
+    border-radius: 24px;
+
+    cursor: pointer;
 }
 
 .principal {
@@ -33,7 +48,8 @@ body {
     height: 10em;
 
     border: none;
-    background: #E5E5E5;
+    background: none;
+    resize: none;
     word-wrap: break-word;
     word-break: break-all;
 
@@ -117,6 +133,7 @@ body {
     align-items: center;
 
     background: white;
+    transition: 2s;
     position: absolute;
     top: 0;
     right: 0;
@@ -124,13 +141,13 @@ body {
 
     font-weight: 400;
     font-size: 24px;
-    /*word-wrap: break-word;
-    overflow:auto;*/
     word-wrap: break-word;
 
 
 
 }
+
+
 
 
 .muñeco img {
@@ -180,9 +197,38 @@ body {
 
 }
 
+/* Modo Oscuro */
+
+body.modoOscuro{
+    background: #191919;
+    transition: 2s;
+}
 
 
+.modoOscuro .campo-texto{
+    color: whitesmoke;
+}
 
+.modoOscuro .campo-texto::placeholder {
+    color: whitesmoke;
+}
+
+.modoOscuro .muñeco {
+    background: black;
+    transition: 2s;
+}
+
+.modoOscuro .muñeco h2{
+    color: whitesmoke;
+}
+
+.modoOscuro .muñeco p{
+    color: whitesmoke;
+}
+
+.modoOscuro #textoContenedor{
+    color: white;
+}
 
 
 @media screen and (max-width:1300px) {
@@ -224,6 +270,8 @@ body {
         height: auto;
         position: relative;
         margin: auto 0;
+
+        
         
 
     }
