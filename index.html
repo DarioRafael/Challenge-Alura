@@ -19,7 +19,7 @@
 
     <div class="logo">
         <img src="imagenes/logo.png" alt="logo alura">
-        <button id = "botonModoOscuro"> Modo oscuro 💡</button>
+        <button id = "botonModoOscuro"> Modo oscuro </button>
     </div>
 
     <div class="principal">
@@ -40,10 +40,6 @@
 
     </div>
 
-
-
-
-
     <script>
         let botonEncriptar = document.getElementById("botonEncriptar");
         let botonDesencriptador = document.getElementById("botonDesencriptador");
@@ -53,22 +49,11 @@
         let botonModoOscuro = document.getElementById("botonModoOscuro");
         let palabraEscrita;
 
-
         botonModoOscuro.addEventListener("click", function() {
-
-
             document.body.classList.toggle("modoOscuro");
-            
-            
-
-
-
-
         });
 
-
         botonEncriptar.addEventListener("click", function () {
-
 
             palabraEscrita = campoTexto.value.toLowerCase();
             campoTexto.value = "";
@@ -90,9 +75,6 @@
             }
             contenedor.appendChild(textoContenedor)
             contenedor.appendChild(botonCopiar);
-
-
-
 
         });
 
@@ -119,8 +101,6 @@
             contenedor.appendChild(textoContenedor)
             contenedor.appendChild(botonCopiar);
 
-
-
         });
 
         botonCopiar.addEventListener("click", function () {
@@ -129,8 +109,6 @@
                 alert("No hay nada para copiar...");
             } else {
                 navigator.clipboard.writeText(palabraEscrita);
-
-
             }
 
         });
